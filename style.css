@@ -1,0 +1,67 @@
+
+.header {
+    background-image: url("imgPerfil/header.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Cormorant Unicase', serif;
+}
+
+h2 {
+    font-family: 'Artifika', serif;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+.main{
+    background: #f2f2f2;
+}
+.color1 {
+    background: #34495e;
+    color: #fff;
+}
+aside {
+    background: #c0392b;
+    color: #fff;
+}
+footer {
+    background: #16a085;
+    color: #fff;
+}
+.padding-sup {
+    padding-top: 20px;
+}
+table, td, th
+{
+    border: solid;
+    text-align: center;
+}
+table
+{
+    margin: 0;
+    background-color: white;
+}
+tr
+{
+    background-color: white;
+}
+th
+{
+    background-color: lightgreen;
+}
+
+th , td
+{
+    padding: 5px;
+}
+td p
+{
+    text-align: justify;
+}
+
+
