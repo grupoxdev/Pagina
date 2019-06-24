@@ -89,6 +89,10 @@ h6 {
   font-weight: 800;
 }
 
+.modal-backdrop{
+	z-index:1;
+}
+
 .masthead {
   min-height: 30rem;
   position: relative;
