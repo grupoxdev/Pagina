@@ -98,6 +98,9 @@
         <a class="js-scroll-trigger" href="#sprints">Resumen del Proyecto</a>
       </li>
       <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#kpi">Desempeño del Grupo</a>
+      </li>
+      <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#contact">Contacto</a>
       </li>
     </ul>
@@ -805,14 +808,23 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-12 mx-auto mb-3">
-          <h2>KPI de las tareas del Proyecto</h2>
+          <h2 class="mb-5">KPI de las tareas del Proyecto</h2>
           <p class="lead mb-2">En el siguiente grafico se puede observar el desempeño general de cada integrante del grupo, en relación con las tareas de desarrollo realizadas durante los primeros 12 Sprint.</p>
-
           <canvas id="myChart" width=100%></canvas>
+          <p class="lead mb-5"></p>
 
+          <p class="lead mb-2">En el siguiente grafico de barras se puede observar el desempeño de los integrantes del equipo de desarrollo en relación con la cantidad de tareas realizadas desde el Sprint 8.</p>
+          <canvas id="bar-chart-horizontal" width=100%></canvas>
+          <p class="lead mb-5"></p>
 
-          <p class="lead mb-5">A continuación se describirán cada una de las fases de los procesos que se tendrán en cuenta durante el desarrollo de la metodología <b>SCRUM</b>.</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger mr-2" href="#fase1">Fase 1</a>
+          <p class="lead mb-2">Los siguientes gráficos de barras están basados en la información de <b>GitHub</b> con respecto a los Commits, Additions y Deletions de cada integrante del equipo de desarrollo desde el Sprint 8.</p>
+          <p class="lead mb-4"><b><em>Los valores de Additions se multiplican x1000 y los de Deletions se multiplican x100.</em></b></p>
+          <canvas id="bar-chart-groupedFront" width=100%></canvas>
+          <p class="lead mb-5"></p>
+          <canvas id="bar-chart-groupedBack" width=100%></canvas>
+          <p class="lead mb-5"></p>
+
+          <a class="btn btn-dark btn-xl js-scroll-trigger mr-2" href="#sprints">Retrospectivas</a>
         </div>
       </div>
     </div>
@@ -866,6 +878,7 @@
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
 
+  <!-- Custom scripts for this graficas -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
   <script>
@@ -875,7 +888,7 @@
     datasets: [{
       label: "Tareas del Proyecto",
       backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#7fe7cc","#dfe38e","#efca8c","#f17e7e","#a1dd70","#cba1d2"],
-      data: [6,5,6,14,2,16,5,2,17,7,2]
+      data: [6,5,6,14,2,16,5,2,18,7,2]
     }]
   };
 
@@ -898,7 +911,90 @@ new Chart(ctx, {
   options: options
 });
 
+//Barras Horizontales
+new Chart(document.getElementById("bar-chart-horizontal"), {
+    type: 'horizontalBar',
+    data: {
+      labels: ["Michael Estiven Guerrero Acevedo", "Christian Fernando Ortiz Pulido", "Juan Sebastian Paez Arroyo", "Cesar Felipe Pineda Ortiz", "David Felipe Rico Hernandez", "Sergio Ivan Sarmiento Beltran"],
+      datasets: [
+        {
+          label: "Tareas (unidad)",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#dfe38e"],
+          data: [8,8,2,6,2,1]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Tareas realizadas a partir del Sprint 8'
+      }
+    }
+});
+
+//Barras Verticales Front
+new Chart(document.getElementById("bar-chart-groupedFront"), {
+    type: 'bar',
+    data: {
+      labels: ["Michael Estiven Guerrero Acevedo", "Christian Fernando Ortiz Pulido", "Juan Sebastian Paez Arroyo", "Cesar Felipe Pineda Ortiz", "David Felipe Rico Hernandez", "Sergio Ivan Sarmiento Beltran"],
+      datasets: [
+        {
+          label: "Commits",
+          backgroundColor: "#3e95cd",
+          data: [5,30,0,17,11,0]
+        }, {
+          label: "Additions",
+          backgroundColor: "#3cba9f",
+          data: [0.301,2.361,0,5.906,0.904,0]
+        }, {
+          label: "Deletions",
+          backgroundColor: "#c45850",
+          data: [0.697,2.242,0,24.390,0.409,0]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Información del repositorio Frontend'
+      }
+    }
+});
+
+
+//Barras Verticales Back
+new Chart(document.getElementById("bar-chart-groupedBack"), {
+    type: 'bar',
+    data: {
+      labels: ["Michael Estiven Guerrero Acevedo", "Christian Fernando Ortiz Pulido", "Juan Sebastian Paez Arroyo", "Cesar Felipe Pineda Ortiz", "David Felipe Rico Hernandez", "Sergio Ivan Sarmiento Beltran"],
+      datasets: [
+        {
+          label: "Commits",
+          backgroundColor: "#3e95cd",
+          data: [0,0,2,8,3,0]
+        }, {
+          label: "Additions",
+          backgroundColor: "#3cba9f",
+          data: [0,0,0.87,6.21,0.05,0]
+        }, {
+          label: "Deletions",
+          backgroundColor: "#c45850",
+          data: [0,0,0.41,1.71,0.08,0]
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Información del repositorio Backend'
+      }
+    }
+});
+
   </script>
+
+
 </body>
 
 </html>
