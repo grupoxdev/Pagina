@@ -800,6 +800,24 @@
     </div>
   </section>
 
+  <!-- KPI -->
+  <section class="content-section bg-light" id="kpi">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-12 mx-auto mb-3">
+          <h2>KPI de las tareas del Proyecto</h2>
+          <p class="lead mb-2">En el siguiente grafico se puede observar el desempeño general de cada integrante del grupo, en relación con las tareas de desarrollo realizadas durante los primeros 12 Sprint.</p>
+
+          <canvas id="myChart" width=100%></canvas>
+
+
+          <p class="lead mb-5">A continuación se describirán cada una de las fases de los procesos que se tendrán en cuenta durante el desarrollo de la metodología <b>SCRUM</b>.</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger mr-2" href="#fase1">Fase 1</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Map -->
   <section id="contact" class="map">
     <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7531146259485!2d-74.08695888568641!3d4.6380751434899254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bce3927c88d%3A0xd9dacab5ca65eb97!2sEdificio+De+Ciencia+Y+Tecnologia%2C+Universidad+Nacional+De+Colombia!5e0!3m2!1ses-419!2sco!4v1560608113798!5m2!1ses-419!2sco" style="border:0" allowfullscreen></iframe>
@@ -848,6 +866,39 @@
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+  <script>
+  var ctx = document.getElementById('myChart');
+  var data = {
+    labels: ["Luis Gerson Avendano Alvira", "Andres Duvan Chaves Mosquera", "Miguel Angel Gomez Chacon", "Michael Estiven Guerrero Acevedo", "David Styven Nieto Marin", "Christian Fernando Ortiz Pulido", "Juan Sebastian Paez Arroyo", "Albert Yarid Perez Cardenas", "Cesar Felipe Pineda Ortiz", "David Felipe Rico Hernandez", "Sergio Ivan Sarmiento Beltran"],
+    datasets: [{
+      label: "Tareas del Proyecto",
+      backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#7fe7cc","#dfe38e","#efca8c","#f17e7e","#a1dd70","#cba1d2"],
+      data: [6,5,6,14,2,16,5,2,17,7,2]
+    }]
+  };
+
+  var options =  {
+    title: {
+      display: true,
+      text: 'Tareas del Proyecto durante los 12 Sprints'
+    }
+  };
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: data,
+    options: options
+});
+
+new Chart(ctx, {
+  type: 'doughnut',
+  data: data,
+  options: options
+});
+
+  </script>
 </body>
 
 </html>
