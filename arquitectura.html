@@ -70,17 +70,12 @@
       <li class="sidebar-brand">
         <a class="js-scroll-trigger" href="#page-top">Arquitectura</a>
       </li>
+
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
+        <a class="js-scroll-trigger" href="#modelos">UML</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        <a class="js-scroll-trigger" href="#responsabilidad">Seguridad</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#motor">Motor de Procesos</a>
@@ -176,7 +171,7 @@
           <h4>
             <strong>Draw.io</strong>
           </h4>
-          <p class="text-faded mb-0">Looks great on any screen size!</p>
+          <p class="text-faded mb-0">Herramienta de creación y edición de diagramas libre que permite la integración con diversas plataformas.</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
@@ -185,7 +180,7 @@
           <h4>
             <strong>Selenium</strong>
           </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          <p class="text-faded mb-0">Entorno de pruebas de software para aplicaciones basadas en la web.</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
@@ -194,9 +189,7 @@
           <h4>
             <strong>Postman</strong>
           </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
+          <p class="text-faded mb-0">Extensión del navegador Google Chrome, que permite el envío de peticiones HTTP REST sin necesidad de desarrollar un cliente.</p>
         </div>
         <div class="col-lg-3 col-md-6">
           <span class="service-icon rounded-circle mx-auto mb-3">
@@ -205,7 +198,7 @@
           <h4>
             <strong>Camunda</strong>
           </h4>
-          <p class="text-faded mb-0">I mustache you a question...</p>
+          <p class="text-faded mb-0">Plataforma BPM que surge como fork de Activiti, y a lo largo de estos años ha ido consiguiendo un nombre en el mundo de los BPMs.</p>
         </div>
       </div>
     </div>
@@ -269,6 +262,66 @@
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#modelos">Modelos</a>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Modelo de Responsabilidad -->
+  <section class="content-section bg-primary text-white" id="responsabilidad">
+    <div class="container text-center">
+      <div class="content-section-heading">
+        <h3 class="text-secondary-aq mb-0">Seguridad</h3>
+      </div>
+      <h2 class="mb-4">Modelo de Responsabilidad</h2>
+      <div class="col-lg-12">
+        <img class="img-fluid mb-2" src="img/architecture/rcompartida.jpg" alt=""></img>
+      </div>
+      <p class="lead mb-5">Modelo de responsabilidad de seguridad compartida de AWS</p>
+      <a href="#operativo" class="btn btn-xl btn-light mr-4 js-scroll-trigger">Sistema Operativo</a>
+    </div>
+  </section>
+
+  <!-- Sistema Operativo -->
+  <section class="content-section bg-light" id="operativo">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Sistema Operativo</h2>
+          <p class="lead mb-3">En el caso del proyecto se utiliza el sistema operativo Ubuntu 18.04 la cual es una de las distribuciones Debian GNU/Linux este sistema operativo posee ciertas características interesantes a nivel de seguridad, como:</p>
+          <li class="lead mb-2">Cuando Ubuntu 18.04 está configurado correctamente y se ejecuta en hardware de calidad, es un sistema operativo de servidor muy estable, con muy pocos (si es que hay) problemas. Se reduce el riesgo de caídas y errores, ya que sólo ejecuta versiones estables de software empaquetado.</li>
+          <li class="lead mb-2">Con una nueva instalación de Ubuntu, los usuarios obtienen soporte a largo plazo durante cinco años, con actualizaciones de seguridad y parches críticos mantenidos.</li>
+          <p class="lead mb-5"></p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger mr-2" href="#gseguridad">Grupos de Seguridad</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grupos de Seguridad -->
+  <section class="content-section bg-primary text-white" id="gseguridad">
+    <div class="container text-center">
+      <div class="content-section-heading">
+        <h3 class="text-secondary-aq mb-0">Seguridad</h3>
+      </div>
+      <h2 class="mb-4">Grupos de Seguridad</h2>
+      <div class="col-lg-12">
+        <img class="img-fluid mb-3" src="img/architecture/gresponsabilidad.jpg" alt=""></img>
+      </div>
+      <p class="lead mb-5">AWS proporciona diversas herramientas y características que puede usar para mantener su cuenta de AWS y recursos a salvo del uso no autorizado. Entre estas se incluyen credenciales para el control de acceso, puntos de enlace HTTPS para la transmisión de datos cifrados, la creación de cuentas de usuario de IAM distintas, el registro de la actividad del usuario para controlar la seguridad y comprobaciones de seguridad de Trusted Advisor. Una de estas herramientas es la de los pares clave. Las instancias Amazon EC2 creadas a partir de una <b>AMI</b> pública usan un par de claves pública y privada en lugar de una contraseña para iniciar sesión a través de Secure Shell (SSH). La clave pública está incrustada en la instancia y la clave privada se usa para iniciar sesión de forma segura sin una contraseña.</p>
+      <a href="#pseguridad" class="btn btn-xl btn-light mr-4 js-scroll-trigger">Problemas de Seguridad</a>
+    </div>
+  </section>
+
+  <!-- Problemas de Seguridad -->
+  <section class="seguridad" id="pseguridad">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Problemas de Seguridad</h2>
+      <h3 class="mx-auto mb-5 lead">Ya se Cuenta con algunos mecanismos de protección dentro del proyecto que permiten una seguridad básica de los datos de quienes utilicen la página, sin embargo, aún no hay una protección amplia en el sentido de una base de datos y certificados de seguridad para la página web.</h3>
+      <h3 class="mx-auto mb-3">Avisos, Recomendaciones y Solución de Problemas</h3>
+      <li class="mx-auto mb-1 lead">Certificados X.509 (Instalación en los servidores).</li>
+      <li class="mx-auto mb-1 lead">Revisar métodos de protección de la base de datos.</li>
+      <li class="mx-auto mb-4 lead">Revisar Los servicios de seguridad que tiene AWS para proteger el tráfico de red.</li>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#motor">Motor de Procesos</a>
     </div>
   </section>
 
