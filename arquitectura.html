@@ -68,22 +68,20 @@
   <nav id="sidebar-wrapper" style="z-index:12">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+        <a class="js-scroll-trigger" href="#page-top">Arquitectura</a>
+      </li>
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#modelos">UML</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
+        <a class="js-scroll-trigger" href="#responsabilidad">Seguridad</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
+        <a class="js-scroll-trigger" href="#motor">Motor de Procesos</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
+        <a class="js-scroll-trigger" href="#contact">Contacto</a>
       </li>
     </ul>
   </nav>
@@ -95,102 +93,103 @@
       <h3 class="mb-5">
         <em>Documentación de la Seguridad, Modelado y Motor de procesos del proyecto.</em>
       </h3>
-    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#modelos">Modelado del proyecto</a>
     </div>
     <div class="overlay"></div>
   </header>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-            <a href="#contact">Unsplash</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+  <!-- Modelos -->
+  <section class="content-section" id="modelos">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary-aq mb-0">Modelos</h3>
+        <h2 class="mb-5">Diagramas UML</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item js-scroll-trigger" href="#dsecuencia">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Diagrama de Secuencia</h2>
+                <p class="mb-0">Vista lógica</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/architecture/uml01.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item js-scroll-trigger" href="#dactividades">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Diagrama de Actividades</h2>
+                <p class="mb-0">Vista de proceso</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/architecture/uml02.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item js-scroll-trigger" href="#ddespliegue">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Diagrama de Despliegue</h2>
+                <p class="mb-0">Vista física</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/architecture/uml03.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item js-scroll-trigger" href="#dentidad">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Diagrama de Entidad Relación</h2>
+                <p class="mb-0">Base de datos</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/architecture/uml04.jpg" alt="">
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="content-section bg-primary text-white text-center" id="services">
+
+  <!-- Tecnologías -->
+  <section class="content-section bg-primary text-white text-center" id="tecnologias">
     <div class="container">
       <div class="content-section-heading">
-        <h3 class="text-secondary-aq mb-0">Services</h3>
-        <h2 class="mb-5">What We Offer</h2>
+        <h3 class="text-secondary-aq mb-0">Tecnologías</h3>
+        <h2 class="mb-5">Herramientas para el Modelado y Pruebas QA</h2>
       </div>
+
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fab fa-html5"></i>
+            <i class="fas fa-project-diagram"></i>
           </span>
           <h4>
-            <strong>HTML5</strong>
+            <strong>Draw.io</strong>
           </h4>
-          <p class="text-faded mb-0">Looks great on any screen size!</p>
+          <p class="text-faded mb-0">Herramienta de creación y edición de diagramas libre que permite la integración con diversas plataformas.</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fab fa-css3-alt"></i>
+            <i class="fas fa-check-square"></i>
           </span>
           <h4>
-            <strong>CSS3</strong>
+            <strong>Selenium</strong>
           </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+          <p class="text-faded mb-0">Entorno de pruebas de software para aplicaciones basadas en la web.</p>
         </div>
         <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fab fa-js-square"></i>
+            <i class="fas fa-rocket"></i>
           </span>
           <h4>
-            <strong>JavaScript</strong>
+            <strong>Postman</strong>
           </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fab fa-node-js"></i>
-          </span>
-          <h4>
-            <strong>Node.js</strong>
-          </h4>
-          <p class="text-faded mb-0">I mustache you a question...</p>
-        </div>
-      </div>
-    </p>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fab fa-react"></i>
-          </span>
-          <h4>
-            <strong>React</strong>
-          </h4>
-          <p class="text-faded mb-0">Looks great on any screen size!</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="far fa-gem"></i>
-          </span>
-          <h4>
-            <strong>Ruby on Rails</strong>
-          </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="fab fa-docker"></i>
-          </span>
-          <h4>
-            <strong>Docker</strong>
-          </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
+          <p class="text-faded mb-0">Extensión del navegador Google Chrome, que permite el envío de peticiones HTTP REST sin necesidad de desarrollar un cliente.</p>
         </div>
         <div class="col-lg-3 col-md-6">
           <span class="service-icon rounded-circle mx-auto mb-3">
@@ -199,84 +198,236 @@
           <h4>
             <strong>Camunda</strong>
           </h4>
-          <p class="text-faded mb-0">I mustache you a question...</p>
+          <p class="text-faded mb-0">Plataforma BPM que surge como fork de Activiti, y a lo largo de estos años ha ido consiguiendo un nombre en el mundo de los BPMs.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Callout -->
-  <section class="callout">
+  <!-- Diagrama de Secuencia -->
+  <section class="content-section bg-light" id="dsecuencia">
     <div class="container text-center">
-      <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary-aq mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Stationary</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Strawberries</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Workspace</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Diagrama de Secuencia</h2>
+          <p class="lead mb-5"></p>
+          <div class="col-lg-12">
+            <img class="img-fluid mb-5" src="img/architecture/diagramas/secuencia.jpg" alt=""></img>
+          </div>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#modelos">Modelos</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
+  <!-- Diagrama de Actividades -->
+  <section class="actividades" id="dactividades">
     <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+      <h2 class="mx-auto mb-5">Diagrama de Actividades</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h4><em>Registrarse</em></h4>
+          <img class="img-fluid mb-5" src="img/architecture/diagramas/registro.jpg" alt=""></img>
+        </div>
+        <div class="col-lg-6">
+          <h4><em>Iniciar sesión</em></h4>
+          <img class="img-fluid mb-5" src="img/architecture/diagramas/sesion.jpg" alt=""></img>
+        </div>
+      </div>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#modelos">Modelos</a>
+    </div>
+  </section>
+
+  <!-- Diagrama de Despliegue -->
+  <section class="content-section bg-primary text-white" id="ddespliegue">
+    <div class="container text-center">
+      <h2 class="mb-4">Diagrama de Despliegue</h2>
+      <div class="col-lg-12">
+        <img class="img-fluid mb-5" src="img/architecture/diagramas/despliegue.jpg" alt=""></img>
+      </div>
+      <a href="#modelos" class="btn btn-xl btn-light mr-4 js-scroll-trigger">Modelos</a>
+    </div>
+  </section>
+
+  <!-- Diagrama de Entidad Relación -->
+  <section class="content-section bg-light" id="dentidad">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Diagrama de Entidad Relación</h2>
+          <p class="lead mb-5"></p>
+          <div class="col-lg-12">
+            <img class="img-fluid mb-5" src="img/architecture/diagramas/entidad.jpg" alt=""></img>
+          </div>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#modelos">Modelos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modelo de Responsabilidad -->
+  <section class="content-section bg-primary text-white" id="responsabilidad">
+    <div class="container text-center">
+      <div class="content-section-heading">
+        <h3 class="text-secondary-aq mb-0">Seguridad</h3>
+      </div>
+      <h2 class="mb-4">Modelo de Responsabilidad</h2>
+      <div class="col-lg-12">
+        <img class="img-fluid mb-2" src="img/architecture/rcompartida.jpg" alt=""></img>
+      </div>
+      <p class="lead mb-5">Modelo de responsabilidad de seguridad compartida de AWS</p>
+      <a href="#operativo" class="btn btn-xl btn-light mr-4 js-scroll-trigger">Sistema Operativo</a>
+    </div>
+  </section>
+
+  <!-- Sistema Operativo -->
+  <section class="content-section bg-light" id="operativo">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Sistema Operativo</h2>
+          <p class="lead mb-3">En el caso del proyecto se utiliza el sistema operativo Ubuntu 18.04 la cual es una de las distribuciones Debian GNU/Linux este sistema operativo posee ciertas características interesantes a nivel de seguridad, como:</p>
+          <li class="lead mb-2">Cuando Ubuntu 18.04 está configurado correctamente y se ejecuta en hardware de calidad, es un sistema operativo de servidor muy estable, con muy pocos (si es que hay) problemas. Se reduce el riesgo de caídas y errores, ya que sólo ejecuta versiones estables de software empaquetado.</li>
+          <li class="lead mb-2">Con una nueva instalación de Ubuntu, los usuarios obtienen soporte a largo plazo durante cinco años, con actualizaciones de seguridad y parches críticos mantenidos.</li>
+          <p class="lead mb-5"></p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger mr-2" href="#gseguridad">Grupos de Seguridad</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Grupos de Seguridad -->
+  <section class="content-section bg-primary text-white" id="gseguridad">
+    <div class="container text-center">
+      <div class="content-section-heading">
+        <h3 class="text-secondary-aq mb-0">Seguridad</h3>
+      </div>
+      <h2 class="mb-4">Grupos de Seguridad</h2>
+      <div class="col-lg-12">
+        <img class="img-fluid mb-3" src="img/architecture/gresponsabilidad.jpg" alt=""></img>
+      </div>
+      <p class="lead mb-5">AWS proporciona diversas herramientas y características que puede usar para mantener su cuenta de AWS y recursos a salvo del uso no autorizado. Entre estas se incluyen credenciales para el control de acceso, puntos de enlace HTTPS para la transmisión de datos cifrados, la creación de cuentas de usuario de IAM distintas, el registro de la actividad del usuario para controlar la seguridad y comprobaciones de seguridad de Trusted Advisor. Una de estas herramientas es la de los pares clave. Las instancias Amazon EC2 creadas a partir de una <b>AMI</b> pública usan un par de claves pública y privada en lugar de una contraseña para iniciar sesión a través de Secure Shell (SSH). La clave pública está incrustada en la instancia y la clave privada se usa para iniciar sesión de forma segura sin una contraseña.</p>
+      <a href="#pseguridad" class="btn btn-xl btn-light mr-4 js-scroll-trigger">Problemas de Seguridad</a>
+    </div>
+  </section>
+
+  <!-- Problemas de Seguridad -->
+  <section class="seguridad" id="pseguridad">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Problemas de Seguridad</h2>
+      <h3 class="mx-auto mb-5 lead">Ya se Cuenta con algunos mecanismos de protección dentro del proyecto que permiten una seguridad básica de los datos de quienes utilicen la página, sin embargo, aún no hay una protección amplia en el sentido de una base de datos y certificados de seguridad para la página web.</h3>
+      <h3 class="mx-auto mb-3">Avisos, Recomendaciones y Solución de Problemas</h3>
+      <li class="mx-auto mb-1 lead">Certificados X.509 (Instalación en los servidores).</li>
+      <li class="mx-auto mb-1 lead">Revisar métodos de protección de la base de datos.</li>
+      <li class="mx-auto mb-4 lead">Revisar Los servicios de seguridad que tiene AWS para proteger el tráfico de red.</li>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#motor">Motor de Procesos</a>
+    </div>
+  </section>
+
+  <!-- Camunda -->
+  <section class="content-section bg-light" id="motor">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Motor de Procesos</h2>
+          <p class="lead mb-5">Para el motor de procesos de este proyecto se opto por implementar <b>Camunda BPM</b>, ya que es de código abierto para el modelado y ejecución de los procesos de negocio. Esta solución, está en continua evolución ya que combina de forma óptima la flexibilidad para integrarse con el ecosistema de desarrollo general existente en nuestro proyecto, con la robustez y fiabilidad de un motor de procesos único.</p>
+          <p class="lead mb-5">Con <b>Camunda BPM</b> podremos modelar diagramas de procesos con  BPMN (Business Process), diagramas de gestión de casos (Case Management) con CMMN y tablas de decisión o reglas de negocio con DMN.</p>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/architecture/camunda/01.jpg" class="d-block w-100" alt="01 - LibretaMilitarProceso">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/02.jpg" class="d-block w-100" alt="02 - Variable_validar_IngresoDatos">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/03.jpg" class="d-block w-100" alt="03 - Variable_validar_FormularioValido">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/04.jpg" class="d-block w-100" alt="04 - Variable_validar_InformacionCorrecta">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/05.jpg" class="d-block w-100" alt="05 - POST -  Iniciar Proceso">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/06.jpg" class="d-block w-100" alt="06 - MOTOR DE PROCESOS-  Iniciar Proceso">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/07.jpg" class="d-block w-100" alt="07 - GET - Obtener lista de tareas por completar">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/08.jpg" class="d-block w-100" alt="08 - MOTOR DE PROCESOS- Completar Tarea">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/09.jpg" class="d-block w-100" alt="09 - POST - Completar Tarea">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/10.jpg" class="d-block w-100" alt="10 - Proceso 1 Usuario Terminado">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/11.jpg" class="d-block w-100" alt="11 - Mapa de Calor despues del 1 Proceso Terminado">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/12.jpg" class="d-block w-100" alt="12 - Camino Realizado por el proceso del primer Usuario">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/13.jpg" class="d-block w-100" alt="13 - Tiempo de creacion_Duracion_Prioridad de las Tares del proceso">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/14.jpg" class="d-block w-100" alt="14 - Variables utilizadas primer proceso">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/15.jpg" class="d-block w-100" alt="15 - Ruta Segundo Proceso">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/16.jpg" class="d-block w-100" alt="16 - Mapa de Calor despues del segundo Proceso">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/17.jpg" class="d-block w-100" alt="17 - Ruta Tercer Proceso">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/18.jpg" class="d-block w-100" alt="18 - Mapa de Calor despues del Tercer Proceso">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/architecture/camunda/19.jpg" class="d-block w-100" alt="19 - Los tres Procesos con fecha de inicio de terminacion e ID">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <p class="lead mb-5"></p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="http://3.213.78.250:8080/camunda/app/cockpit/default/#/login" target="_blank">Camunda BPM en el Proyecto</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -299,7 +450,7 @@
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
+          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/grupoxdev" target="_blank">
             <i class="icon-social-github"></i>
           </a>
         </li>
@@ -327,6 +478,15 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/stylish-portfolio.min.js"></script>
+
+  <!--Tiempo Carousel -->
+  <script>
+    $(document).ready(function(){
+      $('.carousel').carousel({
+        interval: 60000
+      });
+    });
+  </script>
 
 </body>
 
